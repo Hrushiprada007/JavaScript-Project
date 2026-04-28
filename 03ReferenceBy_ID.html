@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-ReferenceBy-ID</title>
+    <script>
+        function bodyload(){
+            document.getElementById("pic").src="../public/images/laptop.jpg";
+            document.getElementById("btnRegister").value="Register";
+            document.getElementById("btnLogin").value="Login";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+      <img src="" alt="" name="pic" id="pic" height="55px" width="55px" style="border:5px solid yellow">
+    <div>
+        <form name="frmRegister">
+            <h2>Register</h2>
+            User Name: <input type="text" name="username" id="userid"><br><input id="btnRegister" type="button">
+        </form>
+    </div>
+    <div>
+        <form name="frmLogin">
+            <h2>Login</h2>
+            Email :<input type="text" name="email" id="emailid"><br><input id="btnLogin" type="button">
+        </form>
+    </div>
+</body>
+</html>
