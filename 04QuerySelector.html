@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-QuerySelector</title>
+    <script>
+        function bodyload(){
+            document.querySelector("#pic").src="../public/images/laptop.jpg";
+            document.querySelector(".btn-Register").value="Register";
+            document.querySelector(".btn-Register").style.backgroundColor="red";
+            document.querySelector(".btn-Login").value="Login";
+            document.querySelector(".btn-Login").style.backgroundColor="green"; 
+
+        }
+
+    </script>
+</head>
+<body onload="bodyload()">
+      <img src="" alt="" name="pic" id="pic" height="75px" width="75px" style="border:5px solid yellow">
+    <div>
+        <form name="frmRegister">
+            <h2>Register</h2>
+            User Name: <input type="text" name="username" id="userid"><br><input id="btnRegister" name="btnRegister" class="btn-Register" type="button">
+        </form>
+    </div>
+    <div>
+        <form name="frmLogin">
+            <h2>Login</h2>
+            Email :<input type="text" name="email" id="emailid"><br><input id="btnLogin" name="btnLogin" class="btn-Login" type="button">
+        </form>
+    </div>
+    
+</body>
+</html>
